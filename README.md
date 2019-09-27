@@ -1,2 +1,1 @@
-# ANDAPP
-ANDAPP
+# ANDAPP project
