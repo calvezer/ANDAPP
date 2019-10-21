@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Test_addnotes</string>
+    <string name="add_new_notes">Add new notes !</string>
+    <string name="add_a_new_note">Add a new note</string>
+    <string name="Submit_popup">Button</string>
+    <string name="submit">Submit</string>
+    <string name="this_is_a_popup_window">This is a popup window.</string>
+</resources>
