@@ -60,3 +60,31 @@ creds = None
 ```
 
 Ensuite, nous allons devoir récupérer nos données et nos cours exportés depuis Aurion.
+
+Pour cela, on va appeler le Calendrier :
+
+```python
+    now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indique le temps en UTC
+    print('Getting the upcoming 10 events')
+    events_result = service.events().list(calendarId='primary', timeMin=now,
+                                          maxResults=10, singleEvents=True,
+                                          orderBy='startTime').execute()
+    events = events_result.get('items', [])
+
+    if not events:
+        print('No upcoming events found.')
+    for event in events:
+        start = event['start'].get('dateTime', event['start'].get('date'))
+        print(start, event['summary'])
+```
+
+On affiche le paramètre 'summary' car c'est lui qui contient normalement le titre du cours.
+
+Cependant, pour certaines données du calendrier, le programme plante car le summary est vide et ne contient aucune donnée.
+
+Dans le cas où les 10 prochains événements sont correctement remplis au niveau du summary, on obtient l'affichage suivant :
+
+![image-20191105232024624](C:\Users\Ervin\AppData\Roaming\Typora\typora-user-images\image-20191105232024624.png)
+
+Voilà, maintenant il serait intéressant de repartir de ces données et de les ranger dans un json par exemple. Avec ce format, on pense qu'il serait possible de les exploiter et les utiliser pour faire une interface sous Android Studio.
+
