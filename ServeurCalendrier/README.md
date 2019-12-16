@@ -1,0 +1,50 @@
+# Un serveur de calendrier
+
+Suite à la première présentation de notre projet le 13/12 dernier, une des propositions faites par le jury pour s'appuyer sur des données "propres" et "stables" était de mettre en place un serveur. Ce serveur permettrait de stocker les données de cours.
+
+### Repérage de serveurs
+
+Avant de choisir un serveur de calendrier en particulier, nous avons regardé les différents options qui existent sur le "marché".
+
+#### 																												Serveur de calendrier
+
+| Modèle                                                    | OS Supporté                      | Compatibilité  Android | Niveau de documentation | Complexité |
+| --------------------------------------------------------- | -------------------------------- | ---------------------- | ----------------------- | ---------- |
+| Darwin  Calendar Server     (Calendar and Contact Server) | Linux / Win(déconseillé) / MacOS | OK                     | +++                     | +++        |
+| Radicale                                                  | Linux / Win / MacOS (à venir)    | OK                     | +++                     | ++         |
+| Cosmo                                                     | Windows / Linux                  | OK                     | ++                      | +++        |
+| BedeWork                                                  | Windows / Linux                  | OK                     | ++                      | +++        |
+
+### Quel serveur ?
+
+À l'heure actuelle nous avons fait le choix d'utiliser le service Radicale. Il est rapidement utilisable et configurable de manière plutôt rapide.
+
+Il est compatible avec Windows ou Linux et surtout avec Android. Radicale est également très bien documenté sur son site.
+
+### Comment le mettre en place ?
+
+Sous Win10, à travers le PowerShell en administrateur :
+
+1) 
+
+```powershell
+python -m pip install --upgrade radicale
+```
+
+2)
+
+```
+python -m radicale --config '""' --storage-filesystem-folder=~/radicale/collections
+```
+
+Ensuite, lorsque que l'on va sur le port 5332 (http://localhost:5232/), voici ce que l'on peut voir :
+
+![](C:\Users\Ervin\Documents\GitHub\ANDAPP\ServeurCalendrier\Images\ServeurOK.PNG)
+
+Pour le moment, il n'y aucune configuration effectué, donc n'importe qui eut se connecter à notre serveur.
+
+Voilà ce qui est possible de faire une fois connecté :
+
+![](C:\Users\Ervin\Documents\GitHub\ANDAPP\ServeurCalendrier\Images\NouveauCalendrier.PNG)
+
+Voilà, j'ai créé un premier calendrier.
