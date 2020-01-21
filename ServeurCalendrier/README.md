@@ -66,3 +66,39 @@ J'ai importé directement un agenda téléchargé depuis Aurion.
 Ci-dessus, on voit qu'il nous manque toujours le titre de certains cours (cf. l'étude mené précédemment sur les données provenant d'Aurion). Je vais modifier les titres à la main afin que le fichier présent sur le serveur soit bon.
 
 ![](Images/Thunderbird_modifié.PNG)
+
+Le temps est venu de protéger l'accès aux calendriers de notre serveur.
+
+Radicale vient charger un fichier de configuration par défaut qui doit se situer au niveau de etc/radicale.
+
+Ce fichier est la clé de voûte de la gestion du serveur.
+
+À partir de celui-ci on va pouvoir piloter et gérer le serveur.
+
+Tout d'abord, nous allons définir les utilisateurs du serveur.
+
+Pour ce faire, il faut créer un fichier contenant les id et password de ces derniers.
+
+Il faut télécharger la librairie :
+
+```bash
+sudo apt-get install apache2-utils
+```
+
+Ce paquet permet de piloter et gérer les serveurs web APACHE.
+
+Ensuite on crée notre nouveau fichier users et on crée le premier profil :
+
+```
+sudo htpasswd -B -c /etc/radicale/users fakeuser
+```
+
+À la suite de cette ligne de commande, on doit donner un mot de passe pour l'utilisateur fakeuser :
+
+```
+New password:
+Re-type new password:
+```
+
+Ensuite, j'ai fait le choix de crypter les mots de passes grâce au package de hachage bcrypt.
+
