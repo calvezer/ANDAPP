@@ -92,10 +92,14 @@ Parmi ces méthodes, on trouve:
 
   ## Bibliographie
 
+  ![img](ServeurCalendrier/Images/ServeurOK.PNG)
+
+  
+
   ###### 1 https://www.axopen.com/developpement-application-android/
-
+  
   ###### 2 https://mathias-seguy.developpez.com/tutoriels/android/comprendre-cyclevie-activite/
-
+  
   ###### 3 https://www.supinfo.com/articles/single/2844-activites-android
   
   ###### 4 https://openclassrooms.com/fr/courses/3449001-utilisez-des-api-rest-dans-vos-projets-web/3501901-pourquoi-rest
