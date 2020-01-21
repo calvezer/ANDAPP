@@ -37,7 +37,7 @@ python -m pip install --upgrade radicale
 python -m radicale --config '""' --storage-filesystem-folder=~/radicale/collections
 ```
 
-Ensuite, lorsque que l'on va sur le port 5332 (http://localhost:5232/), voici ce que l'on peut voir :
+Ensuite, lorsque que l'on va écouter sur le port 5332 (http://localhost:5232/), voici ce que l'on peut voir :
 
 ![](![img](Images/ServeurOK.PNG)
 
