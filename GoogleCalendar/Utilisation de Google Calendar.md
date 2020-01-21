@@ -114,7 +114,7 @@ Cependant, pour certaines données du calendrier, le programme plante car le sum
 
 Dans le cas où les 10 prochains événements sont correctement remplis au niveau du summary, on obtient l'affichage suivant :
 
-<img src="C:\Users\Ervin\Documents\GitHub\ANDAPP\GoogleCalendar\Images\Results_Java.PNG" style="zoom:60%;" />
+![img](Images\Results_Java.PNG)
 
 Voilà, maintenant il serait intéressant de repartir de ces données et de les ranger dans un json par exemple. Avec ce format, on pense qu'il serait possible de les exploiter et les utiliser pour faire une interface sous Android Studio.
 
