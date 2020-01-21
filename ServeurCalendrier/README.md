@@ -39,13 +39,15 @@ python -m radicale --config '""' --storage-filesystem-folder=~/radicale/collecti
 
 Ensuite, lorsque que l'on va sur le port 5332 (http://localhost:5232/), voici ce que l'on peut voir :
 
-![](C:\Users\Ervin\Documents\GitHub\ANDAPP\ServeurCalendrier\Images\ServeurOK.PNG)
+![](![img](Images/ServeurOK.PNG)
+
+
 
 Pour le moment, il n'y aucune configuration effectué, donc n'importe qui peut se connecter à notre serveur.
 
 Voilà ce qui est possible de faire une fois connecté :
 
-![](C:\Users\Ervin\Documents\GitHub\ANDAPP\ServeurCalendrier\Images\NouveauCalendrier.PNG)
+![](Images/NouveauCalendrier.PNG)
 
 Voilà, j'ai créé un premier calendrier.
 
@@ -55,12 +57,12 @@ Il va falloir le remplir de données notamment nos données de cours de l'ENSTA.
 
 Voici les paramètres de connexions à mettre sous Thunderbird :
 
-![](C:\Users\Ervin\Documents\GitHub\ANDAPP\ServeurCalendrier\Images\Thunderbird_paramètres.PNG)
+![](Images/Thunderbird_paramètres.PNG)
 
 J'ai importé directement un agenda téléchargé depuis Aurion.
 
-![](C:\Users\Ervin\Documents\GitHub\ANDAPP\ServeurCalendrier\Images\Thunderbird.PNG)
+![](Images/Thunderbird.PNG)
 
 Ci-dessus, on voit qu'il nous manque toujours le titre de certains cours (cf. l'étude mené précédemment sur les données provenant d'Aurion). Je vais modifier les titres à la main afin que le fichier présent sur le serveur soit bon.
 
-![](C:\Users\Ervin\Documents\GitHub\ANDAPP\ServeurCalendrier\Images\Thunderbird_modifié.PNG)
+![](Images/Thunderbird_modifié.PNG)
